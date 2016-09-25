@@ -1,7 +1,6 @@
 # Usage
 
-An image containing "cc65" (see http://cc65.github.io/cc65/) specifically intended for complining NES games written in
-C as per https://nesdoug.com/ tutorials.
+An image containing "cc65" (see http://cc65.github.io/cc65/) specifically intended for complining NES games written in C as per https://nesdoug.com/ tutorials.
 
 To run this container:
 
@@ -13,6 +12,7 @@ Binaries are install to "/usr/bin", eg:
     /usr/bin/ca65
     /usr/bin/ld65
 
+
 Example compilation of nesdoug's "lesson1" :
 
     root@hash:/src/lesson1# cc65 -Oi lesson1.c --add-source
@@ -22,6 +22,7 @@ Example compilation of nesdoug's "lesson1" :
 
     root@hash:/src/lesson1# ls -l docker-test.nes
     -rw-r--r-- 1 1000 staff 24592 Sep 25 09:18 docker-test.nes
+
 
 A "compile_nes.sh" script is provided in /tmp to automate the above:
 
